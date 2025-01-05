@@ -29,8 +29,8 @@ function Slide() {
 
   return (
     <section
-      className="container02 d-flex flex-column justify-content-center align-items-center p-5 gap-5"
-      style={{ backgroundColor: "#ffcc00", height: "650px" }}
+      className="container02 d-flex flex-column justify-content-center align-items-center p-5 gap-5 bg-warning"
+      style={{ height: "600px" }}
     >
       <div style={{ textAlign: "start", width: "100%" }}>
         <h1>How It Works?</h1>
@@ -55,6 +55,7 @@ function Slide() {
                 width: "30px",
                 border: "none",
                 backgroundColor: index === i ? "#fff" : "#000",
+                borderRadius: "11px"
               }}
               onClick={() => setIndex(i)}
             ></button>

@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header
-      className="d-flex justify-content-start p-5"
+      className="d-flex justify-content-start pt-5"
       style={{ backgroundColor: "transparent" }}
     >
       <h1>

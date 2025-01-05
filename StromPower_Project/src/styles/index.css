@@ -4,7 +4,7 @@ body, html {
   box-sizing: border-box;
 }
 
-/* Header hover */
+/* Header Effect */
 .nav-item a {
   transition: 0.5s;
   border-bottom: 2px solid transparent;
@@ -13,24 +13,30 @@ body, html {
   border-bottom: 2px solid #fff;
 }
 
-/* Container 01 hover */ 
-.container01 a {
-  background-color: #ffcc00;
+/* Button Effect */ 
+.btn {
   border: 2px solid transparent;
-  transition: 0.5s;
 }
-.container01 a:hover {
+.btn:hover {
   border: 2px solid #fff;
 }
 
-.container01 img {
+/* Card Button Effect */
+.cbtn {
+  border: 2px solid transparent;
+}
+.cbtn:hover {
+  border: 2px solid #000;
+}
+
+/* Image Effect */
+.cloud {
   transition: 0.5s;
 }
-.container01 img:hover {
+.cloud:hover {
   transform: rotateX(40deg);
 }
 
-/* Container02 hover*/
 
 
 

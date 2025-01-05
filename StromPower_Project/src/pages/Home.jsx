@@ -28,14 +28,13 @@ function Home() {
           </p>
           <a
             href="#"
-            className="text-decoration-none fs-4 text-black p-3"
-            style={{ borderRadius: "11px" }}
+            className="btn btn-warning fs-4 text-black p-3"
           >
             Learn More
           </a>
         </div>
         <img
-          className="img-fluid"
+          className="cloud img-fluid"
           style={{ height: "650px" }}
           src="./img/rain.png"
           alt="cloud with rain"
@@ -46,10 +45,10 @@ function Home() {
       {/* Section 03 */}
       <section
         className="d-flex flex-column justify-content-center align-items-center"
-        style={{ height: "650px" }}
+        style={{ height: "400px" }}
       >
         <div
-          className="text-center text-white m-5"
+          className="text-center text-white"
           style={{ maxWidth: "60vw" }}
         >
           <h1>Why subscribe to a StormPower Plan?</h1>
