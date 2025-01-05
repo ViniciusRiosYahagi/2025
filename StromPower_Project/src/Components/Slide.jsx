@@ -30,7 +30,7 @@ function Slide() {
   return (
     <section
       className="container02 d-flex flex-column justify-content-center align-items-center p-5 gap-5 bg-warning"
-      style={{ height: "600px" }}
+      style={{ height: "650px" }}
     >
       <div style={{ textAlign: "start", width: "100%" }}>
         <h1>How It Works?</h1>

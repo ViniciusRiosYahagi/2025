@@ -1,8 +1,8 @@
 function Header() {
   return (
     <header
-      className="d-flex justify-content-start pt-5"
-      style={{ backgroundColor: "transparent" }}
+      className="d-flex justify-content-start align-items-center pt-5"
+      style={{ backgroundColor: "transparent", height: "150px"}}
     >
       <h1>
         <a
@@ -10,7 +10,7 @@ function Header() {
           className="text-decoration-none fw-bold text-white"
           style={{ fontSize: "1.2em", margin: "2em" }}
         >
-          Strom Power
+          Storm Power
         </a>
       </h1>
       <nav className="navbar navbar-expand-lg">
