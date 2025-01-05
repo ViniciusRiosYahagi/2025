@@ -6,34 +6,41 @@ function Slide() {
 
   const date = [
     {
-      title: "Tecnologia de Captação",
-      text: "Um sistema avançado de captação de raios, seguro e eficiente, é instalado em sua residência. Ele absorve a energia dos raios e converte-a em eletricidade utilizável.",
+      title: "Lightning Capture Technology",
+      text: "An advanced, safe, and efficient lightning capture system is installed in your home. It absorbs the energy from lightning and converts it into usable electricity.",
     },
     {
-      title: "Conversão Inteligente",
-      text: "A energia captada é regulada e transformada em eletricidade estável, pronta para ser usada em aparelhos e sistemas domésticos.",
+      title: "Smart Conversion",
+      text: "The captured energy is regulated and transformed into stable electricity, ready to be used in household appliances and systems.",
     },
     {
-      title: "Armazenamento Sustentável",
-      text: "Qualquer energia excedente é armazenada em baterias de alta capacidade, garantindo energia extra mesmo quando não houver tempestades.",
+      title: "Sustainable Storage",
+      text: "Any excess energy is stored in high-capacity batteries, ensuring extra power even when there are no storms.",
     },
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % date.length);
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [date.length]);
 
   return (
-    <>
+    <section
+      className="container02 d-flex flex-column justify-content-center align-items-center p-5 gap-5"
+      style={{ backgroundColor: "#ffcc00", height: "650px" }}
+    >
+      <div style={{ textAlign: "start", width: "100%" }}>
+        <h1>How It Works?</h1>
+      </div>
+
       <div className="div02" style={{ maxWidth: "60vw" }}>
-        <h1 className="m-5 text-center" style={{ fontSize: "5em" }}>
+        <h1 className="m-5 text-center" style={{ fontSize: "4.5em" }}>
           {date[index].title}
         </h1>
-        <p className="fs-4 text-center" style={{ paddingBottom: "50px" }}>
+        <p className="fs-4 text-center" style={{}}>
           {date[index].text}
         </p>
       </div>
@@ -54,7 +61,7 @@ function Slide() {
           </>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 

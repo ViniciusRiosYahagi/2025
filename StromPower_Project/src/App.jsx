@@ -1,12 +1,8 @@
-import Container from "./Components/Container"
-import Header from "./Components/Header"
+import Home from "./pages/Home"
 
 function App() {
   return (
-    <main style={{background: "linear-gradient(290deg, #0ed4ff, #0047b2)" }}>
-      <Header />
-      <Container />
-    </main>
+    <Home />
   )
 }
 
