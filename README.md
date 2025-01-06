@@ -1,7 +1,3 @@
-# Projeto #1 
+# First Project #1 
 ### Strom Power
-O StormPower é um projeto inovador que aproveita a energia dos raios em dias chuvosos, convertendo essa energia em eletricidade sustentável para residências. A ideia é utilizar eventos climáticos intensos para gerar energia extra, reduzindo custos com a conta de energia elétrica e contribuindo para um futuro mais verde e eficiente.
-#### Tipo:
-Landing page
-#### Ferramentas:
-React/Bootstrap/Css
+StormPower is an innovative project that harnesses the energy from lightning during rainy days, converting this energy into sustainable electricity for homes. The idea is to use intense weather events to generate extra energy, reducing electricity costs and contributing to a greener and more efficient future.
