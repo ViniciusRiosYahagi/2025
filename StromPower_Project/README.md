@@ -1,8 +1,9 @@
-# React + Vite
+# Storm Power
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StormPower is an innovative project that harnesses the energy from lightning during rainy days, converting this energy into sustainable electricity for homes. The idea is to use intense weather events to generate extra energy, reducing electricity costs and contributing to a greener and more efficient future.
 
-Currently, two official plugins are available:
+### Type:
+Landing Page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tools:
+React / Bootstrap / CSS
