@@ -1,20 +1,13 @@
 function Header() {
   return (
-    <header
-      className="d-flex justify-content-start align-items-center pt-5"
-      style={{ backgroundColor: "transparent", height: "150px"}}
-    >
-      <h1>
-        <a
-          href="#"
-          className="text-decoration-none fw-bold text-white"
-          style={{ fontSize: "1.2em", margin: "2em" }}
-        >
+    <header className="navbar navbar-expand-lg d-flex justify-content-start align-items-baseline py-5">
+      <h1 className="m-0">
+        <a href="#" className="text-decoration-none fw-bold text-white display-3 m-5">
           Storm Power
         </a>
       </h1>
-      <nav className="navbar navbar-expand-lg">
-        <ul className="navbar-nav">
+      <nav>
+        <ul className="navbar-nav ms-auto">
           {["Home", "About", "Plans", "Contact"].map((item, i) => (
             <li key={i} className="nav-item me-3 fs-6">
               <a href="#" className="text-decoration-none fw-bold text-white">

@@ -14,15 +14,17 @@ body, html {
 }
 
 /* Button Effect */ 
-.btn {
+.fbtn {
+  transition: 0.5s;
   border: 2px solid transparent;
 }
-.btn:hover {
+.fbtn:hover {
   border: 2px solid #fff;
 }
 
 /* Card Button Effect */
 .cbtn {
+  transition: 0.5s;
   border: 2px solid transparent;
 }
 .cbtn:hover {
@@ -37,6 +39,27 @@ body, html {
   transform: rotateX(40deg);
 }
 
+/* Input Effect */
+.einput {
+  outline: none;
+
+  border: 2px solid transparent;
+}
+
+.einput:focus{
+  border: 2px solid #000;
+}
+
+/* Email Button */
+.ebtn {
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.ebtn:hover {
+  border: 2px solid #fff;
+  background-color: #181717;
+}
 
 
 
