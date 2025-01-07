@@ -1,8 +1,8 @@
 function Email() {
   return (
-    <section id="promotion" className="d-flex flex-column justify-content-center align-items-center bg-warning w-auto vh-100">
+    <section id="promotion" className="d-flex flex-column justify-content-center align-items-center bg-warning vh-100">
     <div className="w-50">
-      <h1 className="display-4">
+      <h1 className="display-3">
         Exclusive Bonus: Enter with your email now and get 10% off the
         first month of any chosen plan!
       </h1>
@@ -10,7 +10,7 @@ function Email() {
         Receive exclusive tips, insights on sustainable energy, and a
         personalized StormPower demonstration directly in your email.
       </p>
-      <div className="d-flex justify-content-start align-items-center">
+      <div>
         <input
           type="email"
           placeholder="email"

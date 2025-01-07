@@ -42,8 +42,11 @@ function Home() {
         <Email />
       </section>
       {/* Footer */}
-      <footer className="d-flex justify-content-center align-items-center text-white fw-bold" style={{height: "100px"}}>
-        <p>© 2024 ProActive. All rights reserved.</p>
+      <footer className="d-flex justify-content-evenly align-items-center text-white fw-bold bg-dark" style={{height: "100px"}}>
+        <a href="https://github.com/ViniciusRiosYahagi" className="text-white">
+          Made by Vinicius Yahagi Rios
+        </a>
+        <i>© 2024 ProActive. All rights reserved.</i>
       </footer>
     </main>
   );

@@ -26,8 +26,8 @@ function Card() {
   ];
 
   return (
-    <section id="plans" className="d-flex flex-column justify-content-evenly align-items-center vh-100" >
-            <div className="text-center text-white w-75" >
+    <section id="plans" className="d-flex flex-column justify-content-evenly align-items-center text-white vh-100" >
+            <div className="text-center w-75" >
               <h1>Why subscribe to a StormPower Plan?</h1>
                 <p className="fs-5">
                   With Storm Power, you turn storms into clean energy and guaranteed
@@ -39,29 +39,26 @@ function Card() {
                   your energy today!
                 </p>
             </div>
-      <h1 className="text-center text-white">Subscriptions</h1>
-      <div className="d-flex justify-content-center align-items-center gap-5" >
-        {date.map((item, index) => (
-            <div key={index} className="card bg-warning"style={{height: "400px", width: "450px"}}>
-              <div className="card-body d-flex flex-column justify-content-around align-items-center ">
-                <h1 className="card-title m-2">{item.title}</h1>
-                <ul className="list-group-numbered fw-medium">
-                  <li className="list-group-item mb-2">{item.package[0]}</li>
-                  <li className="list-group-item mb-2">{item.package[1]}</li>
-                  <li className="list-group-item mb-2">{item.package[2]}</li>
-                  <li className="list-group-item mb-2">{item.package[3]}</li>
-                </ul>
-                <a href="#" className="ebtn btn btn-dark fw-medium mb-2">
-                  {item.price}
-                </a>
+              <h1>Subscriptions</h1>
+              <div className="d-flex justify-content-center align-items-center gap-5" >
+                {date.map((item, index) => (
+                    <div key={index} className="card bg-warning"style={{height: "400px", width: "450px"}}>
+                      <div className="card-body d-flex flex-column justify-content-evenly align-items-center">
+                        <h1 className="card-title m-2">{item.title}</h1>
+                        <ul className="list-group-numbered fw-medium">
+                          <li className="list-group-item mb-2">{item.package[0]}</li>
+                          <li className="list-group-item mb-2">{item.package[1]}</li>
+                          <li className="list-group-item mb-2">{item.package[2]}</li>
+                          <li className="list-group-item mb-2">{item.package[3]}</li>
+                        </ul>
+                        <a href="#" className="ebtn btn btn-dark fw-medium mb-2">
+                          {item.price}
+                        </a>
+                      </div>
+                    </div>
+                  ))}
               </div>
-            </div>
-        ))}
-      </div>
-      <div className="text-center text-white">
-        <h1>Special Offer!</h1>
-        <p>Subscribe to any annual plan and get 1 month free!</p>
-      </div>
+              <p className="fw-bold">Subscribe to any annual plan and get 1 month free!</p>
     </section>
   );
 }

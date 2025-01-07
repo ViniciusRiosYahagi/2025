@@ -1,10 +1,6 @@
 function Header() {
   return (
-    <header
-      id="home"
-      className="d-flex align-items-baseline p-5"
-      style={{ height: "250px" }}
-    >
+    <header id="home" className="d-flex align-items-baseline p-5 " style={{ height: "200px" }}>
       <h1>
         <a href="#home" className="text-decoration-none fw-bold text-white display-3 me-5">
           Storm Power

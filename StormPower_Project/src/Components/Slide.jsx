@@ -31,7 +31,7 @@ function Slide() {
     <section id="about" className="d-flex flex-column justify-content-center align-items-center bg-warning p-5 gap-5 vh-100" 
     style={{ height: "600px" }}
     >
-      <div className="text-start w-100">
+      <div className="text-start w-auto">
         <h1>How It Works?</h1>
       </div>
       <div className="w-50">
@@ -43,7 +43,7 @@ function Slide() {
         </p>
       </div>
 
-      <div className="d-flex justify-content-center align-item-center text-center gap-3">
+      <div className="d-flex justify-content-center align-item-center gap-4">
         {date.map((_, i) => (
           <>
             <button
@@ -57,6 +57,7 @@ function Slide() {
           </>
         ))}
       </div>
+     
     </section>
   );
 }
