@@ -28,14 +28,12 @@ function Slide() {
   }, [date.length]);
 
   return (
-    <section
-      className="d-flex flex-column justify-content-center align-items-center bg-warning p-5 gap-5"
-      style={{ height: "750px" }}
+    <section id="about" className="d-flex flex-column justify-content-center align-items-center bg-warning p-5 gap-5 vh-100" 
+    style={{ height: "600px" }}
     >
       <div className="text-start w-100">
         <h1>How It Works?</h1>
       </div>
-
       <div className="w-50">
         <h1 className="text-center display-3 m-4">
           {date[index].title}
@@ -52,7 +50,7 @@ function Slide() {
               key={i}
               className="rounded border-0 px-3 py-1"
               style={{
-                backgroundColor: index === i ? "#fff" : "#000",
+                backgroundColor: index === i ? "#fff" : "#212529",
               }}
               onClick={() => setIndex(i)}
             ></button>
