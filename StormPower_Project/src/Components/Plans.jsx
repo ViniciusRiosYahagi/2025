@@ -1,19 +1,29 @@
-function Card() {
+function Plans() {
   const date = [
     {
-      title: "Standard Plan",
+      title: "Basic",
+      description:
+        "Ideal for those starting their journey toward energy efficiency.",
+      package: [
+        "Standard lightning capture.",
+        "Storage for up to 3 days of extra energy.",
+        "Compatibility with existing energy systems."
+      ],
+      price: "$80/month",
+    },    
+    {
+      title: "Standard",
       description:
         "For those seeking efficiency and greater energy independence.",
       package: [
-        "Advanced lightning capture with higher efficiency in storms.",
+        "Advanced lightning capture.",
         "Storage for up to 10 days of extra energy.",
         "Integration with solar energy systems (if applicable).",
-        "Detailed monthly reports on consumption and savings.",
       ],
       price: "$130/month",
     },
     {
-      title: "Premium Plan",
+      title: "Premium",
       description: "The complete solution for independence and sustainability.",
       package: [
         "Optimized capture for maximum energy generation.",
@@ -26,7 +36,9 @@ function Card() {
   ];
 
   return (
-    <section id="plans" className="d-flex flex-column justify-content-evenly align-items-center text-white vh-100" >
+    <section id="plans" className="d-flex flex-column justify-content-evenly align-items-center text-white vh-100"
+    style={{marginTop: "150px"}}
+    >
             <div className="text-center w-75" >
               <h1>Why subscribe to a StormPower Plan?</h1>
                 <p className="fs-5">
@@ -42,16 +54,18 @@ function Card() {
               <h1>Subscriptions</h1>
               <div className="d-flex justify-content-center align-items-center gap-5" >
                 {date.map((item, index) => (
-                    <div key={index} className="card bg-warning"style={{height: "400px", width: "450px"}}>
-                      <div className="card-body d-flex flex-column justify-content-evenly align-items-center">
+                    <div key={index} className="card">
+                      <div className="card-body d-flex flex-column justify-content-around align-items-center gap-5">
                         <h1 className="card-title m-2">{item.title}</h1>
-                        <ul className="list-group-numbered fw-medium">
+                        <ul className="list-group"
+                          style={{height: "200px", width: "350px"}}
+                        >
                           <li className="list-group-item mb-2">{item.package[0]}</li>
                           <li className="list-group-item mb-2">{item.package[1]}</li>
                           <li className="list-group-item mb-2">{item.package[2]}</li>
                           <li className="list-group-item mb-2">{item.package[3]}</li>
                         </ul>
-                        <a href="#" className="ebtn btn btn-dark fw-medium mb-2">
+                        <a href="#home" className="text-dark fw-medium mb-2">
                           {item.price}
                         </a>
                       </div>
@@ -63,4 +77,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default Plans;

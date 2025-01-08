@@ -1,0 +1,61 @@
+@import "variables";
+
+main {
+  height: 100vh;
+  background: $bg-color01;
+}
+
+.content {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7vw;
+  color: $text-white;
+
+  .div01 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    .title {
+      font-size: 6rem;
+    }
+  
+    .subtitle {
+      font-size: 5rem;
+    }
+
+     .description  {
+    font-size: 1.4rem;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      color: $text-dark;
+      font-size: 1.5rem;
+      border-radius: 11px;
+      padding: 1rem 2rem;
+      background-color: $bg-color02;
+      transition: 0.5s;
+      &:hover {
+        background-color: aliceblue;
+      }
+    }
+  
+  }
+
+
+  .image {
+    height: 35vw;
+    max-height: 50vw;
+    transition: 0.5s;
+    &:hover {
+      transform: rotateX(30deg);
+    }
+  }
+}

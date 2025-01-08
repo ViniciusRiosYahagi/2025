@@ -1,8 +1,10 @@
 function Email() {
   return (
-    <section id="promotion" className="d-flex flex-column justify-content-center align-items-center bg-warning vh-100">
+    <section id="promotion" className="d-flex flex-column justify-content-center align-items-center bg-warning"
+    style={{height: "550px"}}
+    >
     <div className="w-50">
-      <h1 className="display-3">
+      <h1>
         Exclusive Bonus: Enter with your email now and get 10% off the
         first month of any chosen plan!
       </h1>

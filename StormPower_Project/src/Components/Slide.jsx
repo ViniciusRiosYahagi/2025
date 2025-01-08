@@ -28,10 +28,10 @@ function Slide() {
   }, [date.length]);
 
   return (
-    <section id="about" className="d-flex flex-column justify-content-center align-items-center bg-warning p-5 gap-5 vh-100" 
-    style={{ height: "600px" }}
+    <section id="about" className="d-flex flex-column justify-content-center align-items-center bg-warning p-5 gap-5"
+    style={{height: "650px"}}
     >
-      <div className="text-start w-auto">
+      <div className="text-start w-100">
         <h1>How It Works?</h1>
       </div>
       <div className="w-50">
