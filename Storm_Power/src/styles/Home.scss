@@ -1,94 +1,16 @@
 @import "variables";
 
-
-
 main {
   height: 100vh;
   background: $bg-color01;
-
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .content {
   height: 100vh;
   width: 100%;
+  scroll-snap-align: start;
 }
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7rem;
-  color: $text-white;
-
-  .div01 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1rem;
-
-    .title {
-      font-size: 4rem;
-    }
-  
-    .subtitle {
-      font-size: 2.2rem;
-    }
-
-     .description  {
-      font-size: 1.2rem;
-    }
-
-    .btn {
-      display: block;
-      text-decoration: none;
-      color: $text-dark;
-      font-size: 1.2rem;
-      padding: 1rem;
-      border-radius: 0.9rem;
-      background-color: $bg-color02;
-      transition: 0.5s;
-      &:hover {
-        background-color: aliceblue;
-      }
-    }
-  
-  }
-
-  .div02 {
-    .image {
-      height: 600px;
-      &:hover {
-        transform: rotateX(30deg);
-      }
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .header .div02 .image {
-    display: none;
-  }
-}
-@media (max-width: 763px) and (min-width: 481px) {
-  .header .div02 .image {
-    display: none;
-  }
-}
-@media (max-width: 904px) and (min-width: 764px) {
-  .header .div02 .image {
-    display: none;
-  }
-}
-@media (max-width: 1024px) and (min-width: 905px) {
-  .header .div02 .image {
-    display: none;
-  }
-}
-
-@media (max-width: 1280px) and (min-width: 1025px) {
-  .header .div02 .image {
-    height: 380px;
-  }
-}
-
 

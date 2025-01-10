@@ -1,0 +1,49 @@
+@import "variables";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 7rem;
+  gap: 1rem;
+  background-color: $bg-color02;
+
+
+  .title {
+    font-size: $title;
+    color: $dark;
+  }
+  
+
+  .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 60%;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: $border-radius;
+    background-color: $white;
+
+    .subtitle {
+      font-size: $subtitle;
+    }
+  
+    .description {
+      font-size: $description-2;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section .div {
+    width: auto;
+  }
+
+
+  .section .title {
+    font-size: $subtitle;
+  }
+}

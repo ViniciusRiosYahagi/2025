@@ -1,0 +1,44 @@
+@import "variables";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: $bg-color02;
+
+  .div01 {
+    .title {
+      font-size: $title;
+    }
+  }
+
+  .div02 {
+    text-align: center;
+    width: 55%;
+    .subtitle {
+      font-size: $subtitle;
+    }
+
+    .description {
+      font-size: $description-1;
+    }
+  }
+
+  .div03 {
+
+    .button {
+      margin: 1rem;
+      width: .5rem;
+      height: 0.2rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: $br;
+      cursor: pointer;
+      &:hover {
+        background-color: $white;
+      }
+    };
+  }
+}

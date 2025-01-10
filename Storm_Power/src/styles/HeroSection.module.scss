@@ -1,0 +1,73 @@
+@import "variables";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem;
+  color: $white;
+
+  .div01 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+
+    .title {
+      font-size: $title;
+    }
+  
+    .subtitle {
+      font-size: $subtitle;
+    }
+
+     .description  {
+      font-size: $description-1;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      color: $dark;
+      font-size: $description-1;
+      padding: 1rem;
+      border-radius: $br;
+      background-color: $bg-color02;
+      transition: 0.5s;
+      &:hover {
+        background-color: $white;
+      }
+    }
+  
+  }
+    .image {
+      display: none;
+      height: 600px;
+      &:hover {
+        transform: rotateX(30deg);
+      }
+    }
+}
+
+@media (max-width: 480px) and (min-width: 360px) {
+  .header .div01 .title {
+    display: none;
+
+  }
+}
+
+@media (min-width: 1280px) {
+  .header .image {
+    display: block;
+    height: 380px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header .image {
+    display: block;
+    height: 600px;
+  }
+}
+
+
