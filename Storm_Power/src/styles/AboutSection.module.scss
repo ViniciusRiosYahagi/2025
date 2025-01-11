@@ -1,36 +1,26 @@
 @import "variables";
+@import "mixins";
 
 .section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  @include flex(column, space-evenly, center);
   padding: 7rem;
   gap: 1rem;
   background-color: $bg-color02;
-
-
   .title {
-    font-size: $title;
+    font-size: $title-1;
     color: $dark;
   }
-  
-
+  // Div - 1
   .div {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    width: 60%;
+    @include flex(column,start, start);
+    width: 55%;
     gap: 1rem;
     padding: 1rem;
-    border-radius: $border-radius;
+    border-radius: $br;
     background-color: $white;
-
     .subtitle {
-      font-size: $subtitle;
+      font-size: $subtitle-1;
     }
-  
     .description {
       font-size: $description-2;
     }
@@ -44,6 +34,6 @@
 
 
   .section .title {
-    font-size: $subtitle;
+    font-size: $subtitle-1;
   }
 }

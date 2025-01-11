@@ -1,37 +1,31 @@
 @import "variables";
+@import "mixins";
 
 .section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex(column, center, center);
   gap: 3rem;
   background-color: $bg-color02;
-
+  // Div - 1
   .div01 {
     .title {
-      font-size: $title;
+      font-size: $title-1;
     }
   }
-
+  // Div - 2
   .div02 {
     text-align: center;
     width: 55%;
     .subtitle {
-      font-size: $subtitle;
+      font-size: $subtitle-1;
     }
-
     .description {
       font-size: $description-1;
     }
   }
-
+  // Div - 3
   .div03 {
-
     .button {
       margin: 1rem;
-      width: .5rem;
-      height: 0.2rem;
       padding: 0.5rem;
       border: none;
       border-radius: $br;

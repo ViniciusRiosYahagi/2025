@@ -1,7 +1,7 @@
-import styles from "../styles/FeatureSection.module.scss"
+import styles from "../styles/HowItWorksSection.module.scss"
 import { useEffect, useState } from "react";
 
-function FeatureSection() {
+function HowItWorksSection() {
 
   const [index, setIndex] = useState(0)
 
@@ -55,4 +55,4 @@ function FeatureSection() {
   )
 }
 
-export default FeatureSection
+export default HowItWorksSection
