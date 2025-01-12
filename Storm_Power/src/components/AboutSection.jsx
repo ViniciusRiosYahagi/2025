@@ -1,4 +1,4 @@
-import styles from "../styles/AboutSection.module.scss";
+import styles from "../styles/components-styles/AboutSection.module.scss";
 
 function AboutSection() {
   return (

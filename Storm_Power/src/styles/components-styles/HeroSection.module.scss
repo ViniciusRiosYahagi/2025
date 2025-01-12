@@ -1,29 +1,28 @@
-@import "variables";
-@import "mixins";
+@import "../variables";
+@import "../mixins";
 
 .header {
   @include flex(_,center,center);
-  padding: 7rem;
+  padding: 6rem;
   color: $white;
   // Div - 1
   .div01 {
     @include flex(column,_,start);
     gap: 1rem;
     .title {
-      font-size: $title-1;
+      font-size: $size-1;
     }
     .subtitle {
-      font-size: $subtitle-1;
+      font-size: $size-2;
     }
      .description  {
-      font-size: $description-1;
+      font-size: $size-3;
     }
-
     .btn {
       display: block;
       text-decoration: none;
       color: $dark;
-      font-size: $description-1;
+      font-size: $size-3;
       padding: 1rem;
       border-radius: $br;
       background-color: $bg-color02;
@@ -32,34 +31,26 @@
         background-color: $white;
       }
     }
-  
   }
+  .div02 {
     .image {
       display: none;
-      height: 600px;
       &:hover {
         transform: rotateX(30deg);
       }
     }
-}
-
-@media (max-width: 480px) and (min-width: 360px) {
-  .header .div01 .title {
-    display: none;
-
   }
 }
-
 @media (min-width: 1280px) {
-  .header .image {
-    display: block;
+  .header .div02 .image {
+    display: inline-block;
+    max-width: auto;
     height: 380px;
   }
 }
-
 @media (min-width: 1920px) {
-  .header .image {
-    display: block;
+  .header .div02 .image {
+    display: inline-block;
     height: 600px;
   }
 }

@@ -1,0 +1,59 @@
+@import "../variables";
+@import "../mixins";
+
+.section {
+  @include flex(column,center,center);
+  gap: 2rem;
+  color: $white;
+  // Div - 1
+  .div01 {
+    width: 60%;
+    text-align: center;
+    .title {
+      font-size: $size-1;
+    }
+    .description {
+      font-size: $size-3;
+    }
+  }
+  // Div - 2
+  .div02 {
+    text-align: center;
+    .subtitle {
+      font-size: $size-2;
+    }
+    .description {
+      font-size: $size-3;
+    }
+    // Div - Card
+    .div-card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      color: $dark;
+      .card {
+        @include flex(column,space-around,center);
+        padding: 1rem;
+        margin: 0.5rem;
+        background-color: $white;
+        border-radius: $br;
+        .card-title {
+          font-size: $size-2;
+        }
+        .card-description {
+          font-size: $size-4;
+        }
+        ul {
+          text-align: left;
+          .card-item {
+            margin: 1rem;
+            font-weight: bold;
+            font-size: $size-4;
+          }
+        }
+        .card-price {
+          font-size: $size-2;
+        }
+      }
+    }
+  }
+}

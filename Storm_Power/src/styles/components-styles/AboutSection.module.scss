@@ -1,13 +1,13 @@
-@import "variables";
-@import "mixins";
+@import "../variables";
+@import "../mixins";
 
 .section {
   @include flex(column, space-evenly, center);
+  gap: 0.5rem;
   padding: 7rem;
-  gap: 1rem;
-  background-color: $bg-color02;
+
   .title {
-    font-size: $title-1;
+    font-size: $size-1;
     color: $dark;
   }
   // Div - 1
@@ -19,10 +19,10 @@
     border-radius: $br;
     background-color: $white;
     .subtitle {
-      font-size: $subtitle-1;
+      font-size: $size-2;
     }
     .description {
-      font-size: $description-2;
+      font-size: $size-3;
     }
   }
 }
@@ -34,6 +34,6 @@
 
 
   .section .title {
-    font-size: $subtitle-1;
+    font-size: $size-2;
   }
 }

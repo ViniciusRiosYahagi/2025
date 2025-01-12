@@ -1,10 +1,11 @@
 // Styles
-import "../styles/Home.scss"
+import "../styles/pages-styles/Home.scss"
 // Componentes
-import AboutSection from "../components/AboutSection"
+// import AboutSection from "../components/AboutSection"
 import HeroSection from "../components/HeroSection"
 import HowItWorksSection from "../components/HowItWorksSection"
 import PlanSection from "../components/PlanSection"
+import EmailSection from "../components/EmailSection"
 
 function Home() {
   return (
@@ -12,7 +13,8 @@ function Home() {
       <HeroSection />
       <HowItWorksSection />
       <PlanSection />
-      <AboutSection/>
+      <EmailSection />
+      {/* <AboutSection/> */}
     </main>
   )
 }

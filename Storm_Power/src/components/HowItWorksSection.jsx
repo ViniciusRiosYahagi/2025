@@ -1,4 +1,4 @@
-import styles from "../styles/HowItWorksSection.module.scss"
+import styles from "../styles/components-styles/HowItWorksSection.module.scss"
 import { useEffect, useState } from "react";
 
 function HowItWorksSection() {
@@ -30,7 +30,7 @@ function HowItWorksSection() {
   return (
     <section className={`content ${styles.section}`}>
       <div className={styles.div01}>
-        <h1  className={styles.title}>How It Work</h1>
+        <h1  className={styles.title}>How It Work?</h1>
       </div>
       <div className={styles.div02}>
         <h1 className={styles.subtitle}>{date[index].title}</h1>

@@ -1,4 +1,4 @@
-import styles from "../styles/PlanSection.module.scss"
+import styles from "../styles/components-styles/PlanSection.module.scss"
 
 function PlanSection() {
 
@@ -28,10 +28,10 @@ function PlanSection() {
   return (
     <section className={`content ${styles.section}`}>
       <div className={styles.div01}>
-        <h1 className={styles.title}>Why Choose a StormPower Plan?</h1>
+        <h1 className={styles.title}>Why Choose a Plan?</h1>
         <p className={styles.description}>
           With StormPower, you turn storms into clean energy and guaranteed savings!
-          Our innovative system safely harnesses the power of lightning, reduces your electricity bill, and decreases dependence on the power grid. Benefit from extra energy during critical moments, with 24/7 dedicated support and the peace of mind of a sustainable and efficient solution. Choose the ideal plan and start revolutionizing your energy today!
+          Our innovative system safely harnesses the power of lightning, reduces your electricity bill, and decreases dependence on the power grid.
         </p>
       </div>
       
@@ -41,7 +41,7 @@ function PlanSection() {
           {date.map((item, index) => (
             <div className={styles.card} key={index}>
               <h1 className={styles["card-title"]}>{item.title}</h1>
-              <p><i className={styles["card-description"]}>{item.description}</i></p>
+              <i className={styles["card-description"]}>{item.description}</i>
               <div>
                 <ul>
                   <li className={styles["card-item"]}>{item.plan[0]}</li>
@@ -49,13 +49,9 @@ function PlanSection() {
                   <li className={styles["card-item"]}>{item.plan[2]}</li>
                 </ul>
               </div>
-          
             </div>
           ))}
         </div>
-        <p className={styles.description}>
-          Subscribe to any plan and get 1 month free!
-        </p>
       </div>
     </section>
   )
