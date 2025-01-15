@@ -14,12 +14,10 @@ function Header() {
     <header className={styles.header}>
       {/* Logo */}
         <div className={styles["logo-div"]}>
-          <h1>Open<span>news</span></h1>
+          <h1>Mercury</h1>
         </div>
       {/* Search */}
-        <div className={styles["search-div"]}>
-          <Search />
-        </div>
+        <Search />
       {/* Nav */}
       <nav className={styles.nav}>
         <ul>

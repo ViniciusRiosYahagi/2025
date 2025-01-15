@@ -1,0 +1,24 @@
+@import "../mixins";
+@import "../variables";
+
+.header {
+  @include flex(_, space-around, center);
+
+  .logo-div {
+    color: $color02;
+    h1 {
+      font-size: 3rem;
+    } 
+  }
+
+
+  .nav {
+    ul {
+      a {
+        color: $color02;
+        text-decoration: none;
+        margin: 0.6rem;
+      }
+    }
+  }
+}
