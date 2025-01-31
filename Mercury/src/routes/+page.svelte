@@ -4,16 +4,15 @@
 
 </script>
 
+<Header title="News"/>
 <main>
-  <Header title="News"/>
   <News />
 </main>
 
 <style lang="scss">
+  @import "../styles/mixins";
+
   main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center, 0);
   }
 </style>

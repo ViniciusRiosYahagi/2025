@@ -14,18 +14,16 @@
 
   article {
     position: relative;
+    @include flex(column,center,_, 15px);
+    @include mp(15px, 15px);
     border-left: 2px solid $color02;
-    @include flex(column, center);
-    gap: 5px;
-    padding: 15px;
-    margin: 15px;
-        
+   
     .title {
       font-size: $subtitle;
     }
 
     .date {
-      font-size: 1rem;
+      font-size: $paragraph;
     }
 
     .image {
@@ -39,7 +37,7 @@
 
     .text {
       position: absolute;
-      font-size: 1rem;
+      font-size: $paragraph;
       max-width: 1000px;
     }
   }

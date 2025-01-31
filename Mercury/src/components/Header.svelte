@@ -19,9 +19,8 @@
   @import '../styles/mixins';
 
   header {
-    @include flex(_,space-evenly,flex-end);
-    width: 100%;
- 
+    @include flex(_,space-evenly,flex-end, );
+    
     h1 {
       a {
         font-size: $title;
@@ -31,12 +30,12 @@
     nav {
       ul {
         list-style: none;
-        display: flex;
-        gap: 1rem;       
+        @include flex(_,_,_, 15px);
         li {
           a {
             border-bottom: 2px solid transparent;
             transition: 0.5s;
+            font-size: $paragraph;
             &:hover {
               border-bottom: 2px solid $color02;
             }
@@ -49,6 +48,5 @@
   .subtitle {
     text-align: center;
     font-size: $subtitle;
-    margin-top: 15px;
   }
 </style>
