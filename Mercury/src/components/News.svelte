@@ -1,7 +1,7 @@
 <article>
   <h1 class="title">Space X</h1>
   <p class="date">25/01/2024</p>
-  <img class="image_text" src="src/img/space2.JPG" alt="">
+  <img class="image_text" src="src/img/spacex.jpg" alt="">
   <p class="text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis nibh sed tristique tristique. Duis sed libero in nunc rutrum vulputate vel a nulla. Vivamus in venenatis urna, ut porta odio. In lacinia vehicula neque ac faucibus. Sed id sagittis mauris. Aenean et est sit amet augue sodales euismod. Mauris odio justo, pretium nec nisl dignissim, mattis scelerisque justo. Pellentesque vitae dui justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
   </p>
