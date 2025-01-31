@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import './styles/variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: 'Jacques Francois', serif;
+  font-weight: 100;
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 14px;
+    background-color: lightblue;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+  body {
+    font-size: 16px;
+    background-color: lightgreen;
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+  body {
+    font-size: 18px;
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+  body {
+    font-size: 20px;
+    background-color: lightyellow;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+  body {
+    font-size: 22px;
+    background-color: lightpink;
+  }
+}
+
+@media (min-width: 2561px) {
+  body {
+    font-size: 24px;
+    background-color: lightgray;
+  }
+}
