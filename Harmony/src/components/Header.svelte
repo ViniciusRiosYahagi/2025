@@ -15,17 +15,18 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    width: 100%;
     padding: 1rem;
+    width: 100%;
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 3rem;
     }
     
     ul {
       list-style: none;
       li {
         display: inline-block;
+        margin-left: 5px;
         a {
           font-size: 1rem;
           border-bottom: 1px solid transparent;
