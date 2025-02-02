@@ -3,6 +3,17 @@
   import '../index.scss'
 </script>
 
-<main>
-  <Header />
+<Header />
+<main class="pages">
+  <slot />
 </main>
+
+<style lang="scss">
+  .pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+</style>

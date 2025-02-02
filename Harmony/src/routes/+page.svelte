@@ -1,7 +1,6 @@
-<script>
-  import Header from "../components/Header.svelte";
+<img src="src/assets/img/harmony.gif" alt="">
 
-</script>
-<main>
-  <Header />
-</main>
+<style lang="scss">
+  
+
+</style>
