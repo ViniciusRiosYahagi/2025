@@ -32,16 +32,14 @@
           border-bottom: 1px solid transparent;
           transition: 1s;
           &:hover {
-          border-bottom: 1px solid #fff;
+          border-bottom: 1px solid;
           }
         }
       }
     }
-
   }
 
 .link {
-      color: #fff;
       text-decoration: none;
   }
 
