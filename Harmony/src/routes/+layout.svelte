@@ -1,13 +1,12 @@
+<!-- Script -->
 <script>
-  import Header from '../components/Header.svelte';
   import '../index.scss'
 </script>
-
-<Header />
+<!-- HTML -->
 <main class="pages">
   <slot />
 </main>
-
+<!-- Main Styles -->
 <style lang="scss">
   .pages {
     display: flex;

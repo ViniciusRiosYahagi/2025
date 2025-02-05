@@ -1,46 +1,31 @@
-<script>
-  let isplay = $state(false)
-  let audioSrc = "src/assets/sonds/music1.mp3"
-  let audio
+<!-- Script -->
+<script lang=ts>
+  let isplaying = $state(true)
+  let audio: HTMLAudioElement
 
-  function toggle() {
-    isplay = !isplay
+  function togglePlay() {
+    if(audio.paused) {
+      audio.play()
+      isplaying = true
+    } else {
+      audio.pause()
+      isplaying = false
+    }
   }
 </script>
-
-
-
-
-<div class="player-div">
-  <p>333 - Awaken</p>
-  <div class="player-control">
-    <button>«</button>
-    <button onclick={toggle}>{isplay === false ? "▶" : "⏸"}</button>
-    <button>»</button>
-  </div>
-</div>
-
+<!-- HTML -->
+<audio bind:this={audio} src={`src/assets/sound/music1.mp3`} autoplay loop></audio>
+<button onclick={togglePlay}>{isplaying ? "Stop" : "Play"}</button>
+ <!-- Styles -->
 <style lang="scss">
-  .player-div {
     p {
       text-align: center;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
       font-size: 1rem;
+      cursor: pointer;
     }
-
-    .player-control {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      margin-top: 15px;
-      width: 200px; 
-      height: 50px;
-
-      button {
-        background-color: transparent;
-        border: none;
-        font-size: 1.2rem;
-        cursor: pointer;
-      }
-    }
-}
 </style>
