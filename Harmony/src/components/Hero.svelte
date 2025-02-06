@@ -1,18 +1,19 @@
 <!-- Script -->
 <script>
+  import Art from "./Art.svelte";
   import Player from "./Player.svelte";
 </script>
 <!-- HTML -->
 <header>
   <h1>Harmony</h1>
-  <img src="src/assets/img/harmony.gif" alt="hand with rose">
+  <Art />
   <nav>
     <ul>
       <Player />
       <li><a href="/about" class="link">About</a></li>
       <li><a href="https://github.com/ViniciusRiosYahagi/2025/tree/main/Harmony" class="link" target="_blank">Github</a></li>
+      <li><a href="/test">test</a></li>
     </ul>
-    <p>Playing now: 333 - Awaked</p>
   </nav>
 </header>
 <!-- Styles -->

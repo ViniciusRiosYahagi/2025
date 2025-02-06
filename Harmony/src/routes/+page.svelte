@@ -1,8 +1,8 @@
 <!-- Script -->
 <script>
-  import HeroSection from "../components/HeroSection.svelte";
+  import Hero from "../components/Hero.svelte";
 </script>
 <!-- HTML -->
-<HeroSection />
+<Hero />
 
 

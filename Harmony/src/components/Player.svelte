@@ -1,21 +1,21 @@
 <!-- Script -->
 <script lang=ts>
-  let isplaying = $state(true)
   let audio: HTMLAudioElement
-
+  let isPlaying = $state(false)
+  
   function togglePlay() {
     if(audio.paused) {
       audio.play()
-      isplaying = true
+      isPlaying = true
     } else {
       audio.pause()
-      isplaying = false
+      isPlaying = false
     }
   }
 </script>
 <!-- HTML -->
-<audio bind:this={audio} src={`src/assets/sound/music1.mp3`} autoplay loop></audio>
-<button onclick={togglePlay}>{isplaying ? "Stop" : "Play"}</button>
+<audio bind:this={audio} src={`src/assets/sound/music1.mp3`}></audio>
+<button onclick={togglePlay}>{isPlaying ? "Play" : "Stop"}</button>
  <!-- Styles -->
 <style lang="scss">
     p {
