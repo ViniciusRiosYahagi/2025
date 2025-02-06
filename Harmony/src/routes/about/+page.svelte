@@ -1,8 +1,7 @@
-<!-- HTML -->
 <div>
-  <h1>About</h1>
+  <h1>About Website</h1>
   <p> 
-    I created this page simply because I thought this GIF would look good on a website. Even if it were something entirely visual and meaningless, existing just for the sake of a simple desire. <a href="/">Return</a> 
+    This website is just a project I wanted to create. Initially, it wasn't supposed to be exactly like this, but oh well.
   </p>
   <br>
   <p>
@@ -12,8 +11,16 @@
   <p>
     Page Creator: <a href="https://www.linkedin.com/in/vinicius-yahagi-rios-350647280/" target="_blank">Vinicius Yahagi Rios</a>
   </p>
+  <br>
+  <p>
+    Music Creator : 333
+  </p>
+  <h1>Technologies</h1>
+  <p>
+    Sveltekit, Sass.
+  </p>
 </div>
-<!-- Styles -->
+
 <style lang="scss">
   div {
     display: flex;

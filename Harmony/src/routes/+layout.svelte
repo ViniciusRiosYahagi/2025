@@ -1,12 +1,13 @@
-<!-- Script -->
 <script>
+  import Nav from '../components/Nav.svelte';
   import '../index.scss'
 </script>
-<!-- HTML -->
+
+<Nav />
 <main class="pages">
   <slot />
 </main>
-<!-- Main Styles -->
+
 <style lang="scss">
   .pages {
     display: flex;

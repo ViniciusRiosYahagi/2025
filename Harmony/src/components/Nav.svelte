@@ -22,27 +22,33 @@
 <style lang="scss">
   header {
     width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 
-    nav {
 
-      h1 {
+    h1 {
         font-size: 3rem;
-
       }
+
+    nav {
 
       ul {
         list-style: none;
         
         li {
           display: inline-block;
-          margin: 0.2rem;
+          margin: 5px;
           
           a {
             text-decoration: none;
-
+            font-size: 1rem;
+            border-bottom: 2px solid transparent;
+            transition: 1s;
+            &:hover {
+            border-bottom: 2px solid #fff;
+            }
           }
         }
       }

@@ -1,8 +1,11 @@
-<!-- Script -->
 <script>
-  import Hero from "../components/Hero.svelte";
+  import Player from "../components/Player.svelte";
 </script>
-<!-- HTML -->
-<Hero />
+
+<div>
+  <Player />
+</div>
+
+
 
 

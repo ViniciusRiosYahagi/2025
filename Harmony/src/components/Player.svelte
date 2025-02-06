@@ -1,4 +1,3 @@
-<!-- Script -->
 <script lang=ts>
   let audio: HTMLAudioElement
   let isPlaying = $state(false)
@@ -13,19 +12,53 @@
     }
   }
 </script>
-<!-- HTML -->
-<audio bind:this={audio} src={`src/assets/sound/music1.mp3`}></audio>
-<button onclick={togglePlay}>{isPlaying ? "Play" : "Stop"}</button>
- <!-- Styles -->
-<style lang="scss">
-    p {
-      text-align: center;
-    }
 
-    button {
-      background-color: transparent;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
+
+<div class="player-div">
+  <audio bind:this={audio} src={`src/assets/sound/music1.mp3`}></audio>
+  <div class="player-contents">
+    <img src="src/assets/img/harmony.gif" alt="hand with rose">
+    <p>333 - Awaked</p>
+
+    <button onclick={togglePlay}>{isPlaying ? "▶" : "⏸"}</button>
+  </div>
+</div>
+
+<style lang="scss">
+  .player-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .player-contents {  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      width: 400px;     
+      border: 5px solid #fff;
+      border-radius: 10px;
+      box-shadow: 15px 20px 10px#333;
+      
+      img {
+        height: auto;
+      }
+
+      button {
+        font-size: 1.5rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        height: 80px;
+        width: 100%;
+        padding: 15px;
+        background-color: #fff;
+        color: #000;
+      }
     }
+}
+
+
 </style>
