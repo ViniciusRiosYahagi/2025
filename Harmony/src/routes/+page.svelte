@@ -1,9 +1,5 @@
-<script>
-  import Player from "../components/Player.svelte";
-</script>
-
 <div>
-  <Player />
+  <img src="src/assets/img/harmony.gif" alt="hand with rose">
 </div>
 
 

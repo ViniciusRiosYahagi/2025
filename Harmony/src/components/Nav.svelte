@@ -27,7 +27,6 @@
     justify-content: space-around;
     align-items: flex-end;
 
-
     h1 {
         font-size: 3rem;
       }

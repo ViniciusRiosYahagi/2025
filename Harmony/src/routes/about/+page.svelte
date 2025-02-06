@@ -1,7 +1,7 @@
 <div>
   <h1>About Website</h1>
   <p> 
-    This website is just a project I wanted to create. Initially, it wasn't supposed to be exactly like this, but oh well.
+    The only reason this website exists is because of a GIF I found while browsing. It's just a visual website.
   </p>
   <br>
   <p>
@@ -12,9 +12,6 @@
     Page Creator: <a href="https://www.linkedin.com/in/vinicius-yahagi-rios-350647280/" target="_blank">Vinicius Yahagi Rios</a>
   </p>
   <br>
-  <p>
-    Music Creator : 333
-  </p>
   <h1>Technologies</h1>
   <p>
     Sveltekit, Sass.
@@ -26,8 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: self-start;
+    align-items: center;
     gap: 10px;
-    width: 800px;
 }
 </style>
