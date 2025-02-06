@@ -1,6 +1,6 @@
 <script>
   import Nav from "$lib/components/Nav.svelte";
-  import '../index.scss'
+  import "../index.scss";
 </script>
 
 <Nav />
