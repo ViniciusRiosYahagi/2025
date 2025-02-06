@@ -4,12 +4,12 @@
 </script>
 
 <Nav />
-<main class="pages">
+<main>
   <slot />
 </main>
 
 <style lang="scss">
-  .pages {
+  main {
     display: flex;
     flex-direction: column;
     justify-content: center;

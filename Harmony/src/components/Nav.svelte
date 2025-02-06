@@ -7,7 +7,7 @@
 </script>
 
 <header>
-  <h1>Harmony</h1>
+  <h1>GIF</h1>
   <nav>
     <ul>
       {#each navItem as {name, path}, i (i + 1)}
