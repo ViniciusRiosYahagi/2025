@@ -2,7 +2,7 @@
   const navItem = $state([
     {name: 'Home', path: '/'},
     {name: 'About', path: '/about'},
-    {name: 'Github', path: 'https://github.com/ViniciusRiosYahagi/2025/tree/main/Harmony'}
+    {name: 'Github', path: 'https://github.com/ViniciusRiosYahagi/2025/tree/main/GIF_Website'}
   ])
 </script>
 
@@ -63,5 +63,4 @@
       align-items: center;
   }
 }
-
 </style>

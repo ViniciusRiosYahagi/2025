@@ -10,10 +10,8 @@
 
 <style lang="scss">
   main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     height: 100vh;
   }
 </style>
