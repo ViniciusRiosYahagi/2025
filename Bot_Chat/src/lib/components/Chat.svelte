@@ -19,12 +19,11 @@
 
 
 <style lang="scss">
-  @use "../../varibale" as var;
+  @use "../../lib/styles/varibale" as var;
+  @use "../../lib/styles/mixins";
 
   section {
-    display: flex;
-    flex-direction: column;
-  
+    @include flex(column,_,_);
     background-color: var.$color-bg01;
     height: 600px;
     width: 600px;
@@ -34,7 +33,9 @@
   }
 
   .bot-div {
-    float: left;
+    display: flex;
+    align-self: flex-start;
+    max-width: 50%;
     p {
     background-color: var.$color-bot;
     color: #fff;
@@ -45,11 +46,14 @@
 
   .user-div {
     float: right;
+    display: flex;
+    align-self: flex-end;
 
     p {
       background-color: var.$color-bg02;
       padding: 15px;
       border-radius: 10px;
+      
     }
   }
 </style>

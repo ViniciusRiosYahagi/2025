@@ -7,8 +7,8 @@
 </div>
 
 <style lang="scss">
-
-  @use "../../varibale" as var;
+  @use "../../lib/styles/varibale" as var;
+  @use "../../lib/styles/mixins" as mx;
 
   div {
     display: flex;

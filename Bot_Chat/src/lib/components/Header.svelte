@@ -20,14 +20,13 @@
 </header>
 
 <style lang="scss">
-  @use "../../varibale" as var;
+  @use "../../lib/styles/varibale" as var;
+  @use "../../lib/styles/mixins" as mx;
 
   header {
     position: fixed;
     top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
     width: 100%;
     padding: 15px;
     background-color: var.$color-bg01;

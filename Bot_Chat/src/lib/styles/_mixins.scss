@@ -1,0 +1,34 @@
+// Flex
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+//  Sizes
+@mixin hw($height, $width) {
+  height: $height;
+  width: $width;
+}
+@mixin mhw($height, $width) {
+  height: $height;
+  width: $width;
+}
+// Spaces
+@mixin mp($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+// Border
+@mixin border($border) {
+  border: $border solid transparent;
+  border-radius: 10px;
+}

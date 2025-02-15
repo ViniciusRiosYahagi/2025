@@ -5,16 +5,16 @@
 
 </script>
 
-<section>
+<main>
   <Hero />
   <Chat />
-</section>
+</main>
 
 <style lang="scss">
-  section {
+  main {
     display: flex;
     justify-content: center;
-    align-items: start;
+   
     width: 100vw;
   }
 </style>
