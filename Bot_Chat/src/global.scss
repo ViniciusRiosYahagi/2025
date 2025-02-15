@@ -1,0 +1,13 @@
+@use './varibale' as var;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+body, html {
+  font-size: 20px;
+  background-color: var.$color-bg02;
+}
