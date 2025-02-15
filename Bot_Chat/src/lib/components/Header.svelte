@@ -31,7 +31,7 @@
     width: 100%;
     padding: 15px;
     background-color: var.$color-bg01;
-    box-shadow: 3px 5px 10px #333;
+    box-shadow: 3px 5px 10px var.$color-sw;
 
     h1 {
       font-size: 2rem;

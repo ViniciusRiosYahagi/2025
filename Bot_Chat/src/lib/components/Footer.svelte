@@ -10,7 +10,7 @@
     bottom: 0;
     width: 100%;
     padding: 15px;
-    box-shadow: -3px -6px 10px #333;
+    box-shadow: -3px -6px 10px var.$color-sw;
     background-color: var.$color-bg01;
 
     h6 {
