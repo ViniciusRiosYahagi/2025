@@ -1,7 +1,7 @@
 <div>
   <h1>Obtenha o seu Chatbot</h1>
   <p>
-    Duis vel leo sit amet enim interdum eleifend eget nec dolor. Nullam gravida non arcu id ullamcorper. Sed in elit finibus, tempus elit quis, ultrices odio. Integer in diam pulvinar, vehicula neque in, suscipit erat. Suspendisse bibendum odio ut sodales fermentum. Fusce pellentesque ipsum nec enim eleifend ornare. Maecenas eget ante rutrum, lobortis est eu, congue ex.
+    Nulla efficitur ultricies fringilla. Proin interdum viverra tincidunt. Vivamus sit amet augue dictum, ullamcorper leo in, eleifend magna. Cras viverra massa ut mattis mollis. Sed sodales magna urna, quis pharetra nisi rutrum non. Nam varius odio a urna cursus, id iaculis diam mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
   </p>
   <button>Planos</button>
 </div>
