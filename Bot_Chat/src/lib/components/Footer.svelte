@@ -7,16 +7,14 @@
   @use "../../lib/styles/mixins" as mx;
 
   footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     padding: 15px;
-    box-shadow: -3px -6px 10px var.$color-sw;
+    box-shadow: -3px -6px 10px var.$shadow;
     background-color: var.$color-bg01;
 
     h6 {
       text-align: center;
-      color: var.$color-text;
+      color: var.$text-01;
     }
   }
 </style>

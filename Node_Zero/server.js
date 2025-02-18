@@ -14,18 +14,23 @@ import { DatabaseMemory } from "./database-memory.js"
 const database = new DatabaseMemory()
 
 const server = fastify()
-
-server.post('/videos', () => {
+ 
+server.post('/videos', (request, replay) => {
+  const { title, description, duration } = request.body
+ 
   database.create({
-    title: 'Video 01',
-    description: 'Esse é o video 01',
-    duration: 180,
+    title,
+    description,
+    duration,
   })
-  console.log(database.list())
+
+  return replay.status(201).send()
 })
 
 server.get('/videos', () => {
-  return 'Hello Rocketseat'
+  const videos = database.list()
+  
+  return videos
 })
 
 server.put('/videos/:id', () => {

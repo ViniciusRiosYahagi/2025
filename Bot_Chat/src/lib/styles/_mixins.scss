@@ -1,5 +1,5 @@
 // Flex
-@mixin flex($direction, $justify, $align) {
+@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -17,10 +17,10 @@
 @mixin hw($height, $width) {
   height: $height;
   width: $width;
-}
+} 
 @mixin mhw($height, $width) {
-  height: $height;
-  width: $width;
+  max-height: $height;
+  max-width: $width;
 }
 // Spaces
 @mixin mp($margin, $padding) {
@@ -28,7 +28,7 @@
   padding: $padding;
 }
 // Border
-@mixin border($border) {
-  border: $border solid transparent;
+@mixin border($size) {
+  border: $size solid #333;
   border-radius: 10px;
 }

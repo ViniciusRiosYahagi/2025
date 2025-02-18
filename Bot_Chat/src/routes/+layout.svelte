@@ -4,11 +4,11 @@ import Header from "$lib/components/Header.svelte";
 import "../global.scss"
 </script>
 
-<Header />
+
 <main>
   <slot />
 </main>
-<Footer />
+
 
 <style lang="scss">
   main {

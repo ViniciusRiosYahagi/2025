@@ -21,20 +21,18 @@
 
 <style lang="scss">
   @use "../../lib/styles/varibale" as var;
-  @use "../../lib/styles/mixins" as mx;
+  @import "../../lib/styles/mixins";
 
   header {
-    position: fixed;
-    top: 0;
-    
+    @include flex(_,space-around, center);
     width: 100%;
     padding: 15px;
     background-color: var.$color-bg01;
-    box-shadow: 3px 5px 10px var.$color-sw;
+    box-shadow: 3px 5px 10px var.$shadow;
 
     h1 {
       font-size: 2rem;
-      color: var.$color-text;
+      color: var.$text-01;
     }
 
     nav {
@@ -46,9 +44,9 @@
           margin-right: 10px;
           a {
             text-decoration: none;
-            color: var.$color-text;
+            color: var.$text-01;
             &:hover {
-              border-bottom: 2px solid var.$color-text;
+              border-bottom: 1px solid var.$text-01;
             }
           }
         }

@@ -20,40 +20,40 @@
 
 <style lang="scss">
   @use "../../lib/styles/varibale" as var;
-  @use "../../lib/styles/mixins";
+  @import "../../lib/styles/mixins";
 
   section {
     @include flex(column,_,_);
+    @include hw(600px, 600px);
     background-color: var.$color-bg01;
-    height: 600px;
-    width: 600px;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 3px 6px 9px var.$color-sw;
+    box-shadow: 3px 6px 9px var.$shadow;
   }
 
   .bot-div {
     display: flex;
     align-self: flex-start;
     max-width: 50%;
+
     p {
-    background-color: var.$color-bot;
-    color: #fff;
-    padding: 15px;
-    border-radius: 10px;
+      background-color: var.$text-01;
+      color: var.$color-bg01;
+      padding: 15px;
+      border-radius: 10px;
     }
   }
 
   .user-div {
-    float: right;
     display: flex;
     align-self: flex-end;
+    max-width: 50%;
 
     p {
       background-color: var.$color-bg02;
+      color: var.$color-bg01;
       padding: 15px;
       border-radius: 10px;
-      
     }
   }
 </style>

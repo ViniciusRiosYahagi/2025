@@ -12,10 +12,7 @@
 
 <style lang="scss">
   main {
-    display: flex;
-    justify-content: center;
-   
-    width: 100vw;
+    
   }
 </style>
 
