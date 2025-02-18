@@ -33,12 +33,25 @@ server.get('/videos', () => {
   return videos
 })
 
-server.put('/videos/:id', () => {
-  return 'Hello Node.js'
+server.put('/videos/:id', (request, replay) => {
+  const videoId = request.params.id
+  const { title, description, duration } = request.body
+
+  database.update(videoId, {
+    title,
+    description,
+    duration,
+  })
+
+  return replay.status(204).send()
 })
 
-server.delete('/videos/:id', () => {
-  return 'Hello Node.js'
+server.delete('/videos/:id', (request, replay) => {
+  const videoId = request.params.id
+
+  database.delete(videoId)
+
+  return replay.status(204).send()
 })
 
 server.listen({
