@@ -27,8 +27,10 @@ server.post('/videos', (request, replay) => {
   return replay.status(201).send()
 })
 
-server.get('/videos', () => {
-  const videos = database.list()
+server.get('/videos', (request) => {
+  const search = request.query.search
+
+  const videos = database.list(search)
   
   return videos
 })
