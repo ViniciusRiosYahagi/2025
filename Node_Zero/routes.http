@@ -11,6 +11,10 @@ Content-Type: application/json
 
 GET  http://localhost:3333/videos?search=node
 
+###
+
+GET  http://localhost:3333/videos
+
 ### 
 
 PUT http://localhost:3333/videos/b9148887-3e39-4b73-9e27-90220b9d2863
