@@ -1,7 +1,7 @@
 import db from "./database.js";
 
 export const createUser = (name) => {
-  const stmt = db.prepare("INSERT INTO user (names) VALUES = (?)")
+  const stmt = db.prepare("INSERT INTO users (name) VALUES (?)")
   stmt.run(name)
 }
 
