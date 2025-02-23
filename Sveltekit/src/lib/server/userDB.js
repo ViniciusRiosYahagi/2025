@@ -11,5 +11,12 @@ export const getAllUser = () => {
 
 export const deleteUser = (id) => {
   const stmt = db.prepare("DELETE FROM users WHERE id = ?")
-  stmt.run(id)
+  const result = stmt.run(id)
+  return result
+}
+
+export const changeName = (name, id) => {
+  const stmt = db.prepare("UPDATE users SET name = ? WHERE id = ?")
+  const result = stmt.run(name, id) 
+  return result
 }
