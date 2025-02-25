@@ -6,7 +6,10 @@ export const GET = async ({ request }) => {
       return new Response(JSON.stringify({ message: "Acesso Negado!" }), { status: 401 })
     }
 
-    return new Response(JSON.stringify({ message: "Acesso permitido!" }), { status: 201 })
+    const response = await fetch("https://dummyjson.com/posts")
+    const data  = await response.json()
+
+    return new Response(JSON.stringify({ data }), { status: 201 })
   } 
 
   catch(error) {
