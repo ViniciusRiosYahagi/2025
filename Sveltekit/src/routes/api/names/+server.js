@@ -5,10 +5,16 @@ import {
   changeName,
 } from "$lib/server/userDB.js";
 
+import { json } from "@sveltejs/kit"
+
+
 export async function GET() {
   try {
-    const users = getAllUser();
-    return new Response(JSON.stringify({ users }), { status: 200 });
+    const users = getAllUser()
+    return new Response(JSON.stringify({ users }), {
+      status: 200,
+      headers: { "Content-Type": "application/json"}
+    })
   } catch (error) {
     return new Response(JSON.stringify({ error: "Erro ao buscar usuarios" }), {
       status: 500,

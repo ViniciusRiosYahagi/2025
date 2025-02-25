@@ -26,5 +26,5 @@ DELETE http://localhost:5173/api/names
 Content-Type: application/json
 
 {
-  "id": 5
+  "id": 6
 }
