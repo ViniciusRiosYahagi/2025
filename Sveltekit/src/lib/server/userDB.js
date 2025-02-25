@@ -1,8 +1,8 @@
 import db from "./database.js";
 
 export const createUser = (name) => {
-  const stmt = db.prepare("INSERT INTO users (name) VALUES (?)")
-  stmt.run(name)
+  const sql = db.prepare("INSERT INTO users (name) VALUES (?)")
+  sql.run(name)
 }
 
 export const getAllUser = () => {
@@ -10,13 +10,13 @@ export const getAllUser = () => {
 }
 
 export const deleteUser = (id) => {
-  const stmt = db.prepare("DELETE FROM users WHERE id = ?")
-  const result = stmt.run(id)
+  const sql = db.prepare("DELETE FROM users WHERE id = ?")
+  const result = sql.run(id)
   return result
 }
 
 export const changeName = (name, id) => {
-  const stmt = db.prepare("UPDATE users SET name = ? WHERE id = ?")
-  const result = stmt.run(name, id) 
+  const sql = db.prepare("UPDATE users SET name = ? WHERE id = ?")
+  const result = sql.run(name, id) 
   return result
 }
