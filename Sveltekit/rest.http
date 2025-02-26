@@ -5,19 +5,10 @@ GET http://localhost:5173/api/names
 POST http://localhost:5173/api/names
 Content-Type: application/json
 
-{
-  "name": "OZ"
-}
-
 ###
 
 PUT http://localhost:5173/api/names
 Content-Type: application/json
-
-{
-  "id": 4,
-  "name": "Ester"
-}
 
 ### 
 
@@ -25,6 +16,4 @@ Content-Type: application/json
 DELETE http://localhost:5173/api/names
 Content-Type: application/json
 
-{
-  "id": 6
-}
+
