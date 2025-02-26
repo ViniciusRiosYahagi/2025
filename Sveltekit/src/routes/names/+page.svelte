@@ -5,7 +5,7 @@
 <div>
   <ul>
     {#each data.users as user }
-      <li>{user.name}</li>
+      <li>Nome: {user.name} || ID: {user.id}</li>
     {/each}
   </ul>
 </div>
