@@ -5,9 +5,6 @@ import {
   changeName,
 } from "$lib/server/userDB.js";
 
-import { json } from "@sveltejs/kit"
-
-
 export async function GET() {
   try {
     const users = getAllUser()
