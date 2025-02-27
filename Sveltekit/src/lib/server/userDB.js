@@ -15,3 +15,7 @@ export const deleteUser = (id) => {
 export const changeName = (name, id) => {
   return db.prepare("UPDATE users SET name = ? WHERE id = ?").run(name, id) 
 }
+
+export const getUserId = (id) => {
+  return db.prepare("SELECT * FROM users WHERE id = ?").get(id)
+}
