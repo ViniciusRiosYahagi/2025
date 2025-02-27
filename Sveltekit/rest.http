@@ -3,6 +3,11 @@ GET http://localhost:5173/api/names
 ###
 
 POST http://localhost:5173/api/names
+Content-Type: "application/json"
+
+{
+  "name": "Riosu"
+}
 
 ###
 

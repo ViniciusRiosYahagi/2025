@@ -5,38 +5,57 @@ import {
   changeName,
 } from "$lib/server/userDB.js";
 
-export async function GET() {
+import { json } from "@sveltejs/kit";
+
+export const GET = async () => {
+
   try {
+
     const users = getAllUser()
-    return new Response(JSON.stringify({ users }), {
-      status: 200,
-      headers: { "Content-Type": "application/json"}
-    })
+    
+    return json(
+      { users }, 
+      { status: 200 }
+    )
+
   } catch (error) {
-    return new Response(JSON.stringify({ error: "Erro ao buscar usuarios" }), {
-      status: 500,
-    });
+
+    return json(
+      { error: "Erro ao buscar usuarios" }, 
+      { status: 500 }
+    )
+
   }
 }
 
-export async function POST({ request }) {
-  try {
-    const { name } = await request.json();
-    // Verifica se a requisição nome esta vazio.
+export const POST = async ({ request }) => {
+
+  const { name } = await request.json();
+
+  try {  
+
     if (!name) {
-      return new Response(JSON.stringify({ error: "Nome é obrigatório" }), {
-        status: 400,
-      });
+      return json(
+        { error: "Nome é obrigatório"},
+        { status: 400}
+      )
+
     }
-    // Adiciona o nome ao banco de dados.
+
     createUser(name);
-    return new Response(JSON.stringify({ message: "Nome salvo com sucesso" }), {
-      status: 201,
-    });
+
+    return json(
+      { message: "Nome salvo com sucesso"},
+      { status: 201 }
+    )
+ 
   } catch (error) {
-    return new Response(JSON.stringify({ error: "Erro ao salvar nome" }), {
-      status: 500,
-    });
+
+    return json(
+      { error: "Erro no servidor"},
+      { status: 500}
+    )
+
   }
 }
 
